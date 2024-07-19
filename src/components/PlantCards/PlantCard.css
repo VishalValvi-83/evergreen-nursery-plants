@@ -4,6 +4,7 @@
     margin: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0,
     0, 0.2);
+    position: relative;
 }
 .image-container{
     height: 200px;
@@ -25,4 +26,27 @@
 
     color: #4d4d4d;
     text-decoration: none;
+}
+
+.config-bnt{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+
+.delete-btn img{
+    width: 25px;
+    height: 25px;
+}
+.edit-btn img{
+    width: 30px;
+    height: 30px;
+}
+.edit-btn,
+.delete-btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
 }
