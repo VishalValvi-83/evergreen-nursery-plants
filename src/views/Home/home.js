@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './home.css'
 import PlantCard from '../../components/PlantCards/PlantCard'
 import axios from 'axios'
-import toast, { Toaster } from 'react-hot-toast'
+import toast from 'react-hot-toast'
 
 function Home() {
     const [plants, setPlants] = useState([])
@@ -20,9 +20,9 @@ function Home() {
     }, [])
 
     return (
-        <div>
-
-            {plants.map((plant, i) => {
+        <div className='container'>
+            <div className='row'>
+             {plants.map((plant, i) => {
                 const {
                     _id,
                     name,
@@ -30,7 +30,7 @@ function Home() {
                     price,
                     description
                 } = plant
-                return (<PlantCard
+                return (  <PlantCard
                     key={i}
                     _id={_id}
                     name={name}
@@ -39,6 +39,7 @@ function Home() {
                     description={description}
                 />)
             })}
+            </div> 
         </div>
     )
 }
