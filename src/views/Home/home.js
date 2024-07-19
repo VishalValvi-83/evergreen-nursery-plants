@@ -12,7 +12,7 @@ function Home() {
         const response = await axios.get(`${process.env.REACT_APP_API_URL}/plants`)
         setPlants(response.data.data)
         toast.dismiss()
-        toast.success("Loaded")
+        toast.success(response.data.message)
     }
 
     useEffect(() => {

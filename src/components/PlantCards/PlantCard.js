@@ -4,6 +4,7 @@ import Edit from './edit.png'
 import Delete from './delete.png'
 import axios from 'axios'
 import toast from 'react-hot-toast'
+import { Link } from 'react-router-dom'
 
 function PlantCard({ _id, name, image, description, price }) {
     const deletePlant = async (id) => {
@@ -12,8 +13,8 @@ function PlantCard({ _id, name, image, description, price }) {
         window.location.reload() 
     }
     return (
-        <div className='col-xl-3 col-lg-3 col-md-6 col-sm-12'>
-            <div className="card">
+        <div className='mb-3 col-xl-3 col-lg-3 col-md-6 col-sm-12'>
+            <div className="card ">
                 <div className="image-container">
                     <img src={image} className="card-image img-fluid" alt={name} />
                 </div>
@@ -26,7 +27,7 @@ function PlantCard({ _id, name, image, description, price }) {
                     </button>
                 </div>
                 <div className='config-bnt'>
-                    <button className='edit-btn ' > <img className='' src={Edit} alt='' /></button>
+                    <Link className='edit-btn ' to={`/update/${_id}`}> <img className='' src={Edit} alt='' /></Link>
 
                     <button className='delete-btn ms-2' onClick={()=>{
                         deletePlant(_id)

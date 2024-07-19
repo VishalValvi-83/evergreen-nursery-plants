@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './views/Home/home';
 import { Toaster } from 'react-hot-toast'
 import Addplant from './views/Addplant/Addplant';
+import UpdatePlant from './views/Update/UpdatePlant';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/add",
     element: <Addplant />
+  },
+  {
+    path: "/update/:id",
+    element: <UpdatePlant />
   },
   {
     path: "*",
