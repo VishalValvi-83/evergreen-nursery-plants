@@ -4,9 +4,11 @@
     background-color: rgba(235, 221, 221, 0.803);
 }
 body{
-    background-image: url("https://img.freepik.com/free-vector/white-nature-leaves-background-design_1017-36772.jpg?t=st=1721391489~exp=1721395089~hmac=25be9c82c72b82f26076923756dcb397c0c9703c6667472013d8b29786f50e73&w=1060") ;
+    background-image: url("https://img.freepik.com/free-photo/top-view-green-leafs-with-copy-space_23-2148535941.jpg?t=st=1721413971~exp=1721417571~hmac=3c25cd820fa0f39cc2523c057e8007e36fa83ae3a8dfd8f60636f9f04a7d3b56&w=1380") ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 .form-title{
     color: #4d4d4d;

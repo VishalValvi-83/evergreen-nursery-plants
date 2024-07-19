@@ -22,9 +22,7 @@ function PlantCard({ _id, name, image, description, price }) {
                     <h5 className="card-title">₹{price}</h5>
                     <span className='name fw-bold'>{name}</span>
                     <p className="card-text">{description}</p>
-                    <button href="/" className="btn">
-                        Add to Cart
-                    </button>
+
                 </div>
                 <div className='config-bnt'>
                     <Link className='edit-btn ' to={`/update/${_id}`}> <img className='' src={Edit} alt='' /></Link>
