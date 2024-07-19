@@ -20,7 +20,7 @@ function Home() {
     }, [])
 
     return (
-        <div className='container'>
+        <div className=''>
             <div className='row'>
              {plants.map((plant, i) => {
                 const {

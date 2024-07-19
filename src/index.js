@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './views/Home/home';
-import Plantview from './views/Plantview/plantview';
 import { Toaster } from 'react-hot-toast'
+import Addplant from './views/Addplant/Addplant';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: "/plants:_id",
-    element: <Plantview />
+    path: "/add",
+    element: <Addplant />
   },
   {
     path: "*",
