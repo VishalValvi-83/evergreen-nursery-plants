@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './views/Home/home';
+import { Toaster } from 'react-hot-toast'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -15,4 +16,4 @@ const router = createBrowserRouter([
   }
 ])
 
-root.render(<RouterProvider router={router} />)
+root.render((<><RouterProvider router={router} /> <Toaster /> </>))
