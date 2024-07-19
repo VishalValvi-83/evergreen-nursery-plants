@@ -42,11 +42,12 @@ function Addplant() {
                     onChange={(e) => setName(e.target.value)} />
                 <label className='form-label'>Name</label>
             </div>
-            {/* show preview image only when the url given othervise none */}
+            
 
 
             <div className='preview-img-container'>
-                {image && <img className='img-fluid preview-img' src={image} alt={name} />}
+        
+                {image &&  <><label className='form-label'>Preview image :</label> <img className='img-fluid preview-img mb-3' src={image} alt={name} /></>}
             </div>
             <div className='form-floating mb-3'>
                 <input type="text" className='mb-3 form-control' value={image} placeholder="Image URL eg. https://example.com/images.jpg" onChange={(e) => setImage(e.target.value)} />
